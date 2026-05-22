@@ -6,6 +6,7 @@ function Card({ title, subtitle, children, icon }) {
           <h3 className="text-xl font-semibold text-text-primary">{title}</h3>
           {subtitle && <p className="mt-1 text-sm text-text-muted">{subtitle}</p>}
         </div>
+        
         {icon && <div className="rounded-2xl bg-brand-500/10 p-3 text-brand-600">{icon}</div>}
       </div>
       <div>{children}</div>
