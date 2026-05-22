@@ -15,7 +15,7 @@ export default defineConfig(({ command, mode }) => {
       proxy: isDev
         ? {
             '/api': {
-              target: 'http://localhost:3000',
+              target: 'https://whatsapp-lead-backend-k5c2.onrender.com',
               changeOrigin: true,
               rewrite: path => path,
             },

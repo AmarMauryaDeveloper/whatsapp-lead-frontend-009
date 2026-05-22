@@ -2,6 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "env": {
-    "VITE_API_URL": "https://crm-backend.onrender.com/api"
+    "VITE_API_URL": "https://whatsapp-lead-backend-k5c2.onrender.com/api"
   }
 }
