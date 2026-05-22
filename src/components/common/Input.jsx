@@ -10,6 +10,8 @@ const Input = forwardRef(({ label, error, disabled, className = '', ...props }, 
         {...props}
         className={`input-theme mt-2 block w-full ${className}`}
       />
+
+      
       {error && <span className="mt-2 block text-xs font-medium text-rose-500">{error}</span>}
     </label>
   );
