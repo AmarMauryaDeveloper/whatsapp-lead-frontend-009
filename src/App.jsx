@@ -18,6 +18,7 @@ const AnalyticsDashboard = lazy(() => import('./pages/dashboard/AnalyticsDashboa
 const LeadListing = lazy(() => import('./pages/leads/LeadListing.jsx'));
 const LeadDetails = lazy(() => import('./pages/leads/LeadDetails.jsx'));
 const LeadTimeline = lazy(() => import('./pages/leads/LeadTimeline.jsx'));
+const CreateCallEntry = lazy(() => import('./pages/leads/CreateCallEntry.jsx'));
 const AssignmentPanel = lazy(() => import('./pages/leads/AssignmentPanel.jsx'));
 const DesignTasks = lazy(() => import('./pages/design/DesignTasks.jsx'));
 const FileUpload = lazy(() => import('./pages/design/FileUpload.jsx'));
@@ -59,6 +60,8 @@ function App() {
           <Route path="dashboard/analytics" element={<ProtectedPage permissions={[PERMISSIONS.REPORTS_VIEW_REVENUE]}><AnalyticsDashboard /></ProtectedPage>} />
 
           <Route path="leads" element={<ProtectedPage permissions={[PERMISSIONS.LEADS_VIEW, PERMISSIONS.LEADS_VIEW_ASSIGNED]}><LeadListing /></ProtectedPage>} />
+          <Route path="leads/call-entry" element={<ProtectedPage permissions={[PERMISSIONS.LEADS_VIEW, PERMISSIONS.LEADS_VIEW_ASSIGNED]}><CreateCallEntry /></ProtectedPage>} />
+          <Route path="leads/call-entry-list" element={<ProtectedPage permissions={[PERMISSIONS.LEADS_VIEW, PERMISSIONS.LEADS_VIEW_ASSIGNED]}><LeadListing /></ProtectedPage>} />
           <Route path="leads/:id" element={<ProtectedPage permissions={[PERMISSIONS.LEADS_VIEW, PERMISSIONS.LEADS_VIEW_ASSIGNED]}><LeadDetails /></ProtectedPage>} />
           <Route path="leads/:id/timeline" element={<ProtectedPage permissions={[PERMISSIONS.LEADS_VIEW, PERMISSIONS.LEADS_VIEW_ASSIGNED]}><LeadTimeline /></ProtectedPage>} />
           <Route path="leads/assignment" element={<ProtectedPage permissions={[PERMISSIONS.LEADS_ASSIGN]}><AssignmentPanel /></ProtectedPage>} />

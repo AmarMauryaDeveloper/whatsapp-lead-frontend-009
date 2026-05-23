@@ -7,6 +7,7 @@ const AppRoutes = {
   printing: '/app/printing/queue',
   delivery: '/app/delivery/tracking',
   reports: '/app/reports/leads',
+  callEntry: '/app/leads/call-entry',
   settings: '/app/settings',
   logs: '/app/logs',
 };

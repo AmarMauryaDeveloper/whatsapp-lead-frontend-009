@@ -103,7 +103,25 @@ body {
   }
 
   .sidebar-bg {
-    @apply border-border-theme bg-secondary/95 text-text-primary shadow-theme backdrop-blur-xl;
+    @apply border-border-theme shadow-theme backdrop-blur-xl;
+    background: linear-gradient(180deg, rgba(10, 64, 52, 0.96), rgba(11, 56, 47, 0.96));
+    color: rgb(var(--color-text-inverse));
+  }
+
+  .sidebar-heading {
+    @apply text-xs font-semibold uppercase tracking-[0.35em] text-text-inverse/70;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 rounded-2xl px-3 py-3 text-sm transition text-text-inverse bg-brand-600/15 border border-white/10;
+  }
+
+  .sidebar-item-active {
+    @apply bg-brand-600 text-white shadow-glow;
+  }
+
+  .sidebar-item-inactive {
+    @apply text-text-inverse hover:bg-brand-600/40;
   }
 
   .topbar-bg {

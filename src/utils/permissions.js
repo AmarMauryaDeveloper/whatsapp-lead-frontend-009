@@ -54,6 +54,7 @@ export const routePermissions = {
   '/app/dashboard/analytics': [PERMISSIONS.REPORTS_VIEW_REVENUE],
   '/app/leads': [PERMISSIONS.LEADS_VIEW, PERMISSIONS.LEADS_VIEW_ASSIGNED],
   '/app/leads/assignment': [PERMISSIONS.LEADS_ASSIGN],
+  '/app/leads/call-entry': [PERMISSIONS.LEADS_VIEW, PERMISSIONS.LEADS_VIEW_ASSIGNED],
   '/app/design/tasks': [PERMISSIONS.DESIGN_VIEW, PERMISSIONS.DESIGN_VIEW_ASSIGNED],
   '/app/design/upload': [PERMISSIONS.DESIGN_UPLOAD],
   '/app/design/revisions': [PERMISSIONS.DESIGN_VIEW, PERMISSIONS.DESIGN_VIEW_ASSIGNED],
